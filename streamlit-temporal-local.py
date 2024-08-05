@@ -1,6 +1,4 @@
-!pip3 install matplotlib
 import pandas as pd
-#from datetime import datetime
 import streamlit as st
 import matplotlib.pyplot as plt
  
