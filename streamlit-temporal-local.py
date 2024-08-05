@@ -1,4 +1,4 @@
-!pip install streamlit
+
 import pandas as pd
 from datetime import datetime
 import streamlit as st
