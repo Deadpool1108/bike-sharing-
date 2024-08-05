@@ -1,6 +1,9 @@
+!pip install streamlit
 import pandas as pd
 from datetime import datetime
-from streamlit import st
+import streamlit as st
+import matplotlib.pyplot as plt # Import matplotlib.pyplot
+import matplotlib.dates 
 
 url = "https://storage.googleapis.com/scsu-data-science/bike_sharing.csv"
 df = pd.read_csv(url)
@@ -14,7 +17,6 @@ def rolling_average(data, window):
 
 st.title("Bike Sharing Ridership Analysis")
 st.header("Exploring ridership patterns")
-
 
 st.subheader("Total Ridership Over Time")
 fig, ax = plt.subplots(figsize=(10, 6))
