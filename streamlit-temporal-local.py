@@ -2,7 +2,7 @@
 import pandas as pd
 #from datetime import datetime
 import streamlit as st
-import matplotlib as plt 
+import matplotlib.pyplot as plt
  
 
 url = "https://storage.googleapis.com/scsu-data-science/bike_sharing.csv"
