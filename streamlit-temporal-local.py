@@ -1,10 +1,11 @@
 import pandas as pd
 import streamlit as st
 import matplotlib.pyplot as plt
+from matplotlib.dates import dataformatter
 
 url = "https://storage.googleapis.com/scsu-data-science/bike_sharing.csv"
-url2 = "https://github.com/Deadpool1108/bike-sharing-/blob/main/bike_sharing.csv"
-df = pd.read_csv(url2)
+
+df = pd.read_csv(url)
 
 df["date"] = pd.to_datetime(df["dteday"], format="%Y-%m-%d")
 
